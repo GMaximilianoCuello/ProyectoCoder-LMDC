@@ -12,7 +12,7 @@
 .barra-menu {
     background-color: #2978A0;
     width: 100%;
-    padding: 1.5rem;
+    padding: .5rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -72,69 +72,68 @@ li {
 
 
 /* PAGINA PRINCIPAL!*/
-.rectangulos p {
-    background-color: yellow;
-    border: solid 10px yellow;
+
+.rectangulos {
+    height: 100vh;
+    margin: 30px;
+    grid-gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    grid-template-areas:
+    "rectangulo-1    rectangulo-3"
+    "rectangulo-2    rectangulo-4"
+  ;
+}
+
+.grid-inicio {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    color: black;
+    border: solid black;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-inicio a {
+    text-decoration: none;
+    color: white;
+    border: dashed rgb(2, 21, 85) 5px;
+    background-color: rgb(145, 148, 148);
 }
 
 .rectangulo-1 {
-    font-size: 65px;
-    margin: 10px;
-    border: 1px solid black;
-    border-radius: 10px;
-    color: black;
-    width: 850px;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: url(../img/Personas.jpg);
+    grid-area: rectangulo-1;
+    background-image: url(../img/Personas.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
 .rectangulo-2 {
-    margin: 10px;
-    border: 1px solid black;
-    border-radius: 10px;
-    font-size: 65px;
-    color: black;
-    width: 850px;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: url(../img/sublimacion.jpg);
+    grid-area: rectangulo-2;
+    background-image: url(../img/sublimacion.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
 .rectangulo-3 {
-    margin: 10px;
-    border: 1px solid black;
-    border-radius: 10px;
-    font-size: 65px;
-    color: black;
-    width: 850px;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: url(../img/Produccion.jpeg);
+    grid-area: rectangulo-3;
+    background-image: url(../img/Produccion.jpeg);
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .rectangulo-4 {
-    margin: 10px;
-    border: 1px solid black;
-    border-radius: 10px;
-    font-size: 65px;
-    color: black;
-    width: 850px;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: url(../img/contacto-formas.jpg);
+    grid-area: rectangulo-4;
+    background-image: url(../img/contacto-formas.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 /* FOOTER */
@@ -156,9 +155,9 @@ li {
     color: white;
     margin-right: 300px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
 }
 
 .pie-pagina h3 {
@@ -176,17 +175,22 @@ li {
     justify-content: center;
 }
 
-.pie-pagina a {
-    color: black;
-    text-decoration: none;
-    font-size: 30px;
-    padding: .5rem;
-    margin-right: 430px;
+/* Logos footer*/
+.social {
+    background-color: black;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    bottom: 2rem;
+    left: 90%;
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 1rem;
+}
+
+.bi {
+    font-size: 2rem;
+    color: white;
 }
 
 /* Nosotros */
@@ -214,11 +218,12 @@ li {
     height: 400px;
     background-image: url(../img/Persona.jpg);
     background-repeat: no-repeat;
-    background-size: 400px 350px;
+    background-size: 400px 400px;
     font-size: 35px;
     color: white;
     text-align: center;
     margin: 10px;
+    
 }
 
 /* SERVICIOS */
@@ -245,7 +250,7 @@ h1 {
     border: 3px solid rgb(0, 0, 0);
 
     display: flex;
-    gap: 2rem;
+    gap: 450px;
 }
 
 .tarjeta {
@@ -318,15 +323,17 @@ h1 {
 .jarros {
     background-color: #2978A0;
     grid-area: jarros;
-    background-image: url(../img/);
+    background-image: url(../img/Jarro.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 .chopps {
     background-color: #2978A0;
     grid-area: chopps;
-    background-image: url(../);
+    background-image: url(../img/Chopps.jpeg);
     background-size: cover;
+    background-position: 450px;
 }
 
 .matelisto {
@@ -339,8 +346,9 @@ h1 {
 .maderas {
     background-color: #2978A0;
     grid-area: maderas;
-    background-image: url(..);
+    background-image: url(../img/Madera.jpeg);
     background-size: cover;
+    background-position: center;
 }
 
 .remeras {
@@ -350,11 +358,12 @@ h1 {
     background-size: cover;
 }
 
-.buzos {
+.gorras {
     background-color: #2978A0;
     grid-area: buzos;
-    background-image: url(..);
+    background-image: url(../img/Gorra.png);
     background-size: cover;
+    background-position: center;
 }
 
 .almohada {
@@ -366,14 +375,101 @@ h1 {
 
 /* Contacto */
 
-.contacta {
-    
+.contacto-ubi {
+    display: flex;
+    justify-content: space-around;
+}
+
+.formulario {
+    margin-left: 10px;
 }
 
 .mensaje p {
     color: white;
+    font-size: 50px;
+    text-decoration: underline;
+    grid-area: mensaje;
 }
 
-.ubicacion {
-   
+.ubicacion p {
+    color: white;
+    font-size: 50px;
+    text-decoration: underline;
+    grid-area: ubicacion;
+}
+
+@media (max-width: 750px) {
+
+   /* MediaQueris inicio */
+
+    .rectangulos {
+        height: 100vh;
+        margin: 30px;
+        grid-gap: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    
+        grid-template-areas:
+        "rectangulo-1"
+        "rectangulo-3"
+        "rectangulo-2"
+        "rectangulo-4"
+      ;
+    }
+    
+    .grid-inicio {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 50px;
+        color: black;
+        border: solid black;
+        border-radius: 10px;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .grid-inicio a {
+        text-decoration: none;
+        color: white;
+        border: dashed rgb(2, 21, 85) 5px;
+        background-color: rgb(145, 148, 148);
+    }
+
+    /* Media Productos */
+
+    .produccion {
+        height: 100vh;
+        margin: 60px;
+        grid-gap: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+      
+        grid-template-areas:
+          "tazas    jarros" 
+          "chopps   matelisto"
+          "maderas  remeras"  
+          "buzos    almohada"
+        ;
+      }
+      
+      .grid-hijo {
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          font-size: 35px;
+          color: black;
+          border: solid black;
+          border-radius: 20px;
+      
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      
+      .grid-hijo p {
+          border: solid aquamarine;
+          background-color: aquamarine;
+      }
+
 }
