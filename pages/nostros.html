@@ -12,32 +12,39 @@
     <body class="body">
 
         <header class="barra-menu">
-            <nav>
-                <div>
-                    <a href="../index.html"><img src="../img/logo sin fondo.jpg" class="logo" alt="main-logo"></a>
-                    <ul>
-                        <li>
-                            <a href="../index.html">Inicio</a>
-                        </li>
-                        <li>
-                            <a href="./nostros.html">Nosotros</a>
-                        </li>
-                        <li>
-                            <a href="./servicio.html">Servicios</a>
-                        </li>
-                        <li>
-                            <a href="./productos.html">Productos</a>
-                        </li>
-                        <li>
-                            <a href="./contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-             </div>
-                <form action="search">
-                    <input type="text" placeholder="buscar">
-                </form>
-
-            </nav>
+            <div class="container-fluid bg-primary" data-bs-theme="dark">
+                <nav class="navbar navbar-expand-lg container">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="../index.html"><img src="../img/logo sin fondo.jpg" class="logo"></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" href="../index.html">Inicio</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="./nostros.html">Nosotros</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="./productos.html">Productos</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="./servicio.html">Servicios</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="./contacto.html">Contacto</a>
+                          </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-success boton" type="submit">Search</button>
+                        </form>
+                      </div>
+                    </div>
+                  </nav>
+            </div> 
         </header>
         <hr>
         <main>
@@ -47,7 +54,11 @@
                 </section>
                 <section>
                     <h2>Quién Soy?</h2>
-                    <p>Hola, soy Maxi!</p>
+                    <h3>Hola, soy Maxi!</h3>
+                    <div class="quien-soy">
+                    <p>Soy emprendedor de esta marca llamada LMDC! Me dedico al servicio de sublimacion de productos, ya sean de plastico, ceramica, madera, textil y demas materiales. Realizo este emprendimiento con el objetivo de aumentar mi experiencia laborar y adentrarme al mundo de la venta para formarme en mi carrera laboral</p>
+                    <img src="../img/Persona.jpg" class="persona">
+                    </div>
                 </section>
                 
             </section>
