@@ -16,7 +16,6 @@
     position: sticky;
     top: 0px;
     z-index: 1;
-    overflow: hidden;
     box-sizing: border-box;
 }
 
@@ -149,7 +148,7 @@ li {
 .pie-pagina h2 {
     font-size: 40px;
     color: white;
-    margin-right: 300px;
+    margin-right: 200px;
     display: flex;
     flex-direction: row;
     justify-content: end;
@@ -206,7 +205,7 @@ li {
 }
 
 .presentacion h2 {
-    margin: 20px 20px 50px 600px;
+    margin: 20px 20px 50px 800px;
     width: 300px;
     padding-left: 25px;
     font-size: 50px;
@@ -219,19 +218,19 @@ li {
     color: white;
     margin-left: 470px;
     text-decoration: underline;
-    font-size: 40px;
+    font-size: 60px;
 }
 
 .presentacion p {
     height: 400px;
-    font-size: 35px;
+    font-size: 50px;
     color: white;
     text-align: center;
-    margin: 10px;   
+    margin: 100px 10px 10px 10px;   
 }
 
 .persona {
-    width: 300px;
+    width: 500px;
     margin-right: 100px;
 }
 
@@ -256,7 +255,8 @@ h1 {
 
 .tarjetas {
     margin: 3rem;
-    border: 3px solid rgb(0, 0, 0);
+    padding: 75px;
+    border: solid;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -409,6 +409,12 @@ h1 {
 
 @media (max-width: 750px) {
 
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
    /* MediaQueris inicio */
 
     .rectangulos {
@@ -483,6 +489,56 @@ h1 {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    /* Media nosotros */
+
+    .presentacion {
+        width: 100%;
+    }
+
+    .presentacion h1 {
+        background-color: #3c787c;
+        text-align: center;
+        font-size: 65px; 
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        border-top: #202A25;
+    }
+    
+    .quien-soy {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap-reverse;
+    }
+    
+    .presentacion h2 {
+        margin: 20px 1px 5px 5px;
+        padding-left: 25px;
+        font-size: 50px;
+        color: white;
+        border: solid aquamarine;
+        border-radius: 0px 35px 0px 35px;
+    }
+    
+    .presentacion h3 {
+        color: white;
+        text-decoration: underline;
+        font-size: 25px;
+        margin-top: 20px;
+        margin-left: 300px;
+    }
+    
+    .presentacion p {
+        font-size: 32px;
+        color: white;
+        text-align: center;  
+        margin: 5px;
+    }
+    
+    .persona {
+        width: 300px;
+        margin-top: 10px;
+        margin-left: 100px;
     }
 
     /* Media Productos */
@@ -564,6 +620,29 @@ h1 {
         border: solid 4px;
         width: 400px;
         height: 400px;
+    }
+
+    /* media contacto*/
+
+    .contacto-ubi {
+        display: inline;
+    }
+    
+    .formulario {
+        margin-left: 10px;
+    }
+    
+    .mensaje p {
+        color: white;
+        font-size: 50px;
+        text-decoration: underline;
+        grid-area: mensaje;
+    }
+    
+    .ubicacion p {
+        color: white;
+        font-size: 50px;
+        text-decoration: underline;
     }
 
 }
