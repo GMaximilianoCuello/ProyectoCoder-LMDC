@@ -663,7 +663,7 @@ h1 {
     .mapa {
         left: 0;
         top: 0;
-        width: 100%;
+        width: 375px;
         height: 410px;
         position: relative;
     }
