@@ -407,7 +407,7 @@ h1 {
     text-decoration: underline;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 415px) {
 
     * {
         margin: 0;
@@ -478,14 +478,14 @@ h1 {
     }
     
     .pie-pagina h3 {
-        font-size: 30px;
+        font-size: 20px;
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
     
     .pie-pagina p {
-        font-size: 20px;
+        font-size: 15px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -501,7 +501,7 @@ h1 {
     .presentacion h1 {
         background-color: #3c787c;
         text-align: center;
-        font-size: 65px; 
+        font-size: 45px; 
         font-family: Georgia, 'Times New Roman', Times, serif;
         border-top: #202A25;
     }
@@ -513,7 +513,7 @@ h1 {
     }
     
     .presentacion h2 {
-        margin: 20px 1px 5px 85px;
+        margin: 20px 1px 5px 50px;
         padding-left: 25px;
         font-size: 50px;
         color: white;
@@ -526,11 +526,11 @@ h1 {
         text-decoration: underline;
         font-size: 25px;
         margin-top: 20px;
-        margin-left: 145px;
+        margin-left: 125px;
     }
     
     .presentacion p {
-        font-size: 26px;
+        font-size: 24px;
         color: white;
         text-align: center;  
         margin: 5px;
@@ -546,7 +546,7 @@ h1 {
 
     .produccion {
         height: 100vh;
-        margin: 60px;
+        margin: 30px;
         grid-gap: 40px;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -597,7 +597,7 @@ h1 {
     }
     
     .tarjetas {
-        margin: 1rem;
+        margin: .2rem;
     
         display: grid;
         grid-template-columns: 1fr;
@@ -642,12 +642,12 @@ h1 {
     }
     
 
-    .mapa iframe {
+    .mapa {
         left: 0;
         top: 0;
-        width: 350px;
-        height: 450px;
-        position: absolute;
+        width: 410px;
+        height: 410px;
+        position: relative;
     }
 
     .ubicacion p {
