@@ -407,6 +407,285 @@ h1 {
     text-decoration: underline;
 }
 
+/******************************** smartphone ********************************/
+@media (max-width: 750px) {
+
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+   /* MediaQueris inicio */
+
+    .rectangulos {
+        height: 100vh;
+        margin: 30px;
+        grid-gap: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    
+        grid-template-areas:
+        "rectangulo-1"
+        "rectangulo-3"
+        "rectangulo-2"
+        "rectangulo-4"
+      ;
+    }
+    
+    .grid-inicio {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 50px;
+        color: black;
+        border: solid black;
+        border-radius: 10px;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .grid-inicio a {
+        text-decoration: none;
+        color: white;
+        border: dashed rgb(2, 21, 85) 5px;
+        background-color: rgb(145, 148, 148);
+    }
+
+    /*media footer*/
+    .pie-pagina {
+        width: 100%;
+        height: 150px;
+        border: 2px solid;
+        position: static;
+        background-color: #0770db;
+        background-image: url(../img/logo\ sin\ fondo.jpg);
+        background-repeat: no-repeat;
+        background-size: 100px 100px;
+        background-position-x: 10px;
+        padding: 30px;
+    }
+    
+    
+    .pie-pagina h2 {
+        font-size: 0px;
+        color: #0770db;
+        margin-right: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+    }
+    
+    .pie-pagina h3 {
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .pie-pagina p {
+        font-size: 15px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    /* Media Logos Footer*/
+    .social {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        bottom: .5rem;
+        left: 76%;
+        padding: 1rem;
+        gap: 2rem;
+        border-radius: 1rem;
+    }
+    
+    .bi {
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    /* Media nosotros */
+
+    .presentacion {
+        width: 100%;
+    }
+
+    .presentacion h1 {
+        background-color: #3c787c;
+        text-align: center;
+        font-size: 45px; 
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        border-top: #202A25;
+    }
+    
+    .quien-soy {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap-reverse;
+    }
+    
+    .presentacion h2 {
+        margin: 20px 1px 5px 200px;
+        padding-left: 25px;
+        font-size: 50px;
+        color: white;
+        border: solid aquamarine;
+        border-radius: 0px 35px 0px 35px;
+    }
+    
+    .presentacion h3 {
+        color: white;
+        text-decoration: underline;
+        font-size: 25px;
+        margin-top: 20px;
+        margin-left: 280px;
+    }
+    
+    .presentacion p {
+        font-size: 30px;
+        color: white;
+        text-align: center;  
+        margin: 5px;
+    }
+    
+    .persona {
+        width: 300px;
+        margin-top: 10px;
+        margin-left: 110px;
+    }
+
+    /* Media Productos */
+
+    .produccion {
+        height: 100vh;
+        margin: 10px;
+        grid-gap: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+      
+        grid-template-areas:
+          "tazas    jarros" 
+          "chopps   matelisto"
+          "maderas  remeras"  
+          "buzos    almohada"
+        ;
+      }
+      
+      .grid-hijo {
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          font-size: 35px;
+          color: black;
+          border: solid black;
+          border-radius: 20px;
+      
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      
+      .grid-hijo p {
+          border: solid aquamarine;
+          background-color: aquamarine;
+      }
+
+      /*Media Servicios*/
+      h1 {
+        width: 100%;
+        background-color: #3c787c;
+        text-align: center;
+        font-size: 65px; 
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        border-top: #202A25;
+    }
+    
+    .servicios p {
+        color: white;
+        margin: 10px;
+        font-size: 35px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        text-decoration: underline;
+    }
+    
+    .tarjetas {
+        margin: .2rem;
+    
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+    .tarjeta {
+        background-color: #253031;
+        flex-basis: 100%;
+        padding: .4rem;
+    }
+    
+    .tarjeta h2 {
+        font-size: 40px;
+        font-family: sans-serif;
+        color: bisque;
+        text-align: center;
+    }
+    
+    .tarjeta img {
+        border: solid 4px;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* media contacto*/
+
+    .contacto-ubi {
+        width: 100%;
+        display: inline;
+    }
+
+    .contacta {
+        width: 100%;
+    }
+    
+    .contacta h1 {
+        font-size: 50px;
+    }
+    
+    .formulario {
+        margin-left: 10px;
+    }
+    
+    .mensaje p {
+        color: white;
+        font-size: 50px;
+        text-decoration: underline;
+        grid-area: mensaje; 
+    }
+    
+    .mapa {
+        top: 0;
+        width: 500px;
+        height: 400px;
+        margin-left: 10px;
+    }
+
+    .ubicacion p {
+        color: white;
+        font-size: 50px;
+        text-decoration: underline;
+        margin-left: 10px;
+    }
+
+}
+
+/***************************** celulares **********************************/
 @media (max-width: 387px) {
 
     * {
@@ -683,3 +962,4 @@ h1 {
     }
 
 }
+
