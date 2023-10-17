@@ -647,6 +647,14 @@ h1 {
         width: 100%;
         display: inline;
     }
+
+    .contacta {
+        width: 100%;
+    }
+    
+    .contacta h1 {
+        font-size: 50px;
+    }
     
     .formulario {
         margin-left: 10px;
@@ -656,21 +664,22 @@ h1 {
         color: white;
         font-size: 50px;
         text-decoration: underline;
-        grid-area: mensaje;
+        grid-area: mensaje; 
     }
     
 
     .mapa {
-        left: 0;
         top: 0;
-        width: 345px;
+        width: 330px;
         height: 400px;
+        margin-left: 10px;
     }
 
     .ubicacion p {
         color: white;
         font-size: 50px;
         text-decoration: underline;
+        margin-left: 10px;
     }
 
 }
