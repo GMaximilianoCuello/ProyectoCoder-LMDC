@@ -663,9 +663,8 @@ h1 {
     .mapa {
         left: 0;
         top: 0;
-        width: 375px;
-        height: 410px;
-        position: relative;
+        width: 345px;
+        height: 400px;
     }
 
     .ubicacion p {
