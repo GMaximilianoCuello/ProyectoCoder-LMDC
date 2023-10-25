@@ -1,0 +1,314 @@
+
+/* PAGINA PRINCIPAL!*/
+
+.rectangulos {
+	height: 100vh;
+	margin: 30px;
+	grid-gap: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: "rectangulo-1    rectangulo-3" "rectangulo-2    rectangulo-4";
+}
+
+.grid-inicio {
+	font-family: $font-family_1;
+	font-size: 50px;
+	color: $color_2;
+	border: solid black;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	a {
+		text-decoration: none;
+		color: $color_1;
+		border: dashed rgb(2, 21, 85) 5px;
+		background-color: $background-color_2;
+		&:hover {
+			transition: 1s;
+			transform: scale(1.1);
+		}
+	}
+}
+
+.rectangulo-1 {
+	grid-area: rectangulo-1;
+	background-image: url(../img/Personas.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.rectangulo-2 {
+	grid-area: rectangulo-2;
+	background-image: url(../img/sublimacion.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.rectangulo-3 {
+	grid-area: rectangulo-3;
+	background-image: url(../img/Produccion.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.rectangulo-4 {
+	grid-area: rectangulo-4;
+	background-image: url(../img/contacto-formas.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+/* Nosotros */
+
+.presentacion {
+	h1 {
+		width: 100%;
+		background-color: $background-color_5;
+		text-align: center;
+		font-size: 65px;
+		font-family: $font-family_2;
+		border-top: #202A25;
+	}
+	h2 {
+		margin: 20px 20px 50px 800px;
+		width: 300px;
+		padding-left: 25px;
+		font-size: 50px;
+		color: $color_1;
+		border: solid aquamarine;
+		border-radius: 0px 35px 0px 35px;
+	}
+	h3 {
+		color: $color_1;
+		margin-left: 470px;
+		text-decoration: underline;
+		font-size: 60px;
+	}
+	p {
+		height: 400px;
+		font-size: 50px;
+		color: $color_1;
+		text-align: center;
+		margin: 100px 10px 10px 10px;
+	}
+}
+
+.quien-soy {
+	display: flex;
+	justify-content: center;
+}
+
+.persona {
+	width: 500px;
+	margin-right: 100px;
+}
+
+/* SERVICIOS */
+
+h1 {
+	width: 100%;
+	background-color: $background-color_5;
+	text-align: center;
+	font-size: 65px;
+	font-family: $font-family_2;
+	border-top: #202A25;
+}
+
+.servicios {
+	p {
+		color: $color_1;
+		margin: 10px;
+		font-size: 35px;
+		font-family: $font-family_2;
+		text-align: center;
+		text-decoration: underline;
+	}
+}
+
+.tarjetas {
+	margin: 3rem;
+	padding: 75px;
+	border: solid;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+}
+
+.tarjeta {
+	background-color: $background-color_1;
+	flex-basis: 100%;
+	padding: 2rem;
+	h2 {
+		font-size: 40px;
+		font-family: $font-family_3;
+		color: $color_3;
+		text-align: center;
+	}
+	img {
+		border: solid 4px black;
+		width: 600px;
+		height: 470px;
+	}
+}
+
+/* PRDOCUTOS */
+
+.productos {
+	p {
+		color: $color_1;
+		margin: 10px;
+		font-size: 35px;
+		font-family: $font-family_2;
+		text-align: center;
+		text-decoration: underline;
+	}
+}
+
+.produccion {
+	height: 100vh;
+	margin: 60px;
+	grid-gap: 40px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: "tazas   jarros   chopps   matelisto" "maderas  remeras  buzos    almohada";
+}
+
+.grid-hijo {
+	font-family: $font-family_1;
+	font-size: 35px;
+	color: $color_2;
+	border: solid black;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	p {
+		border: solid aquamarine;
+		background-color: $background-color_6;
+	}
+}
+
+.tazas {
+	background-color: $background-color_7;
+	grid-area: tazas;
+	background-image: url(../img/mockup-taza.jpg);
+	background-size: cover;
+	&:hover {
+		transition: 0.5s;
+		transform: scale(1.1);
+	}
+}
+
+.jarros {
+	background-color: $background-color_7;
+	grid-area: jarros;
+	background-image: url(../img/Jarro.jpg);
+	background-size: cover;
+	background-position: center;
+	&:hover {
+		transition: 0.5s;
+		transform: scale(1.1);
+	}
+}
+
+.chopps {
+	background-color: $background-color_7;
+	grid-area: chopps;
+	background-image: url(../img/Chopps.jpeg);
+	background-size: cover;
+	background-position: 450px;
+	&:hover {
+		transition: 0.5s;
+		transform: scale(1.1);
+	}
+}
+
+.matelisto {
+	background-color: $background-color_7;
+	grid-area: matelisto;
+	background-image: url(../img/mockup-mater.jpg);
+	background-size: cover;
+	&:hover {
+		transition: 0.5s;
+		transform: scale(1.1);
+	}
+}
+
+.maderas {
+	background-color: $background-color_7;
+	grid-area: maderas;
+	background-image: url(../img/Madera.jpeg);
+	background-size: cover;
+	background-position: center;
+	&:hover {
+		transition: 0.5s;
+		transform: scale(1.1);
+	}
+}
+
+.remeras {
+	background-color: $background-color_7;
+	grid-area: remeras;
+	background-image: url(../img/mockup-reme.png);
+	background-size: cover;
+	&:hover {
+		transition: 0.5s;
+		transform: scale(1.1);
+	}
+}
+
+.gorras {
+	background-color: $background-color_7;
+	grid-area: buzos;
+	background-image: url(../img/Gorra.png);
+	background-size: cover;
+	background-position: center;
+	&:hover {
+		transition: 0.5s;
+		transform: scale(1.1);
+	}
+}
+
+.almohada {
+	background-color: $background-color_7;
+	grid-area: almohada;
+	background-image: url(../img/mockup-almo.jpg);
+	background-size: cover;
+	&:hover {
+		transition: 0.5s;
+		transform: scale(1.1);
+	}
+}
+
+/* Contacto */
+
+.contacto-ubi {
+	display: flex;
+	justify-content: space-around;
+}
+
+.formulario {
+	margin-left: 10px;
+}
+
+.mensaje {
+	p {
+		color: $color_1;
+		font-size: 50px;
+		text-decoration: underline;
+		grid-area: mensaje;
+	}
+}
+
+.ubicacion {
+	p {
+		color: $color_1;
+		font-size: 50px;
+		text-decoration: underline;
+	}
+}

@@ -1,0 +1,23 @@
+
+.barra-menu {
+	height: 120px;
+	font-size: 20px;
+	gap: 1px;
+	position: sticky;
+	top: 0px;
+	z-index: 1;
+	box-sizing: border-box;
+}
+
+.boton {
+	color: $color_1;
+	border: white solid;
+}
+
+.logo {
+	height: 100px;
+	&:hover {
+		transition: 2s;
+		transform: rotatey(360deg);
+	}
+}
