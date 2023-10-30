@@ -26,7 +26,7 @@
 		border: dashed rgb(2, 21, 85) 5px;
 		background-color: $background-color_2;
 		&:hover {
-			transition: 1s;
+			transition: 0.5s;
 			transform: scale(1.1);
 		}
 	}

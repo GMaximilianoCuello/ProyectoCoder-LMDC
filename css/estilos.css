@@ -60,7 +60,7 @@
   background-color: rgb(145, 148, 148);
 }
 .grid-inicio a:hover {
-  transition: 1s;
+  transition: 0.5s;
   transform: scale(1.1);
 }
 
