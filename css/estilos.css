@@ -817,26 +817,26 @@ h1 {
   }
   /* media contacto*/
   .contacto-ubi {
-    width: 90%;
+    width: 70%;
     display: inline;
   }
   .contacto-ubi .contacta {
-    width: 100%;
+    width: 90%;
   }
   .contacto-ubi .contacta h1 {
-    font-size: 50px;
+    font-size: 20px;
   }
   .contacto-ubi .formulario {
     margin-left: 10px;
   }
   .contacto-ubi .formulario .mensaje p {
     color: white;
-    font-size: 50px;
+    font-size: 40px;
     text-decoration: underline;
   }
   .contacto-ubi .ubicacion p {
     color: white;
-    font-size: 50px;
+    font-size: 40px;
     text-decoration: underline;
     margin-left: 10px;
   }

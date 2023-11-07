@@ -529,14 +529,14 @@
     /* media contacto*/
 
 	.contacto-ubi {
-		width: 90%;
+		width: 70%;
 		display: inline;
 	
 
 		.contacta {
-			width: 100%;
+			width: 90%;
 			h1 {
-				font-size: 50px;
+				font-size: 20px;
 			}
 		}
 
@@ -547,7 +547,7 @@
 			.mensaje {
 				p {
 					color: $color_1;
-					font-size: 50px;
+					font-size: 40px;
 					text-decoration: underline;
 				}
 			}
@@ -558,7 +558,7 @@
 
 			p {
 				color: $color_1;
-				font-size: 50px;
+				font-size: 40px;
 				text-decoration: underline;
 				margin-left: 10px;
 			}
