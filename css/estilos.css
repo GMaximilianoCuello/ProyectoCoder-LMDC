@@ -777,7 +777,7 @@ h1 {
     background-color: aquamarine;
   }
   /*Media Servicios*/
-  .servicios h1 {
+  h1 {
     width: 100%;
     background-color: #3c787c;
     text-align: center;
