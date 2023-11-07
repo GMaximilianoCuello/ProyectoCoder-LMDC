@@ -18,16 +18,14 @@
   z-index: 1;
   box-sizing: border-box;
 }
-
-.boton {
+.barra-menu .boton {
   color: white;
   border: white solid;
 }
-
-.logo {
+.barra-menu .logo {
   height: 100px;
 }
-.logo:hover {
+.barra-menu .logo:hover {
   transition: 2s;
   transform: rotatey(360deg);
 }
@@ -42,8 +40,7 @@
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "rectangulo-1    rectangulo-3" "rectangulo-2    rectangulo-4";
 }
-
-.grid-inicio {
+.rectangulos .grid-inicio {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 50px;
   color: black;
@@ -53,40 +50,36 @@
   justify-content: center;
   align-items: center;
 }
-.grid-inicio a {
+.rectangulos .grid-inicio a {
   text-decoration: none;
   color: white;
   border: dashed rgb(2, 21, 85) 5px;
   background-color: rgb(145, 148, 148);
 }
-.grid-inicio a:hover {
+.rectangulos .grid-inicio a:hover {
   transition: 0.5s;
   transform: scale(1.1);
 }
-
-.rectangulo-1 {
+.rectangulos .rectangulo-1 {
   grid-area: rectangulo-1;
   background-image: url(../img/Personas.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.rectangulo-2 {
+.rectangulos .rectangulo-2 {
   grid-area: rectangulo-2;
   background-image: url(../img/sublimacion.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.rectangulo-3 {
+.rectangulos .rectangulo-3 {
   grid-area: rectangulo-3;
   background-image: url(../img/Produccion.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-
-.rectangulo-4 {
+.rectangulos .rectangulo-4 {
   grid-area: rectangulo-4;
   background-image: url(../img/contacto-formas.jpg);
   background-repeat: no-repeat;
@@ -95,7 +88,7 @@
 }
 
 /* Nosotros */
-.presentacion h1 {
+.presentacion .intro h1 {
   width: 100%;
   background-color: #3c787c;
   text-align: center;
@@ -103,7 +96,7 @@
   font-family: Georgia, "Times New Roman", Times, serif;
   border-top: #202A25;
 }
-.presentacion h2 {
+.presentacion .intro h2 {
   margin: 20px 20px 50px 800px;
   width: 300px;
   padding-left: 25px;
@@ -112,26 +105,25 @@
   border: solid aquamarine;
   border-radius: 0px 35px 0px 35px;
 }
-.presentacion h3 {
+.presentacion .intro h3 {
   color: white;
   margin-left: 470px;
   text-decoration: underline;
   font-size: 60px;
-}
-.presentacion p {
-  height: 400px;
-  font-size: 50px;
-  color: white;
-  text-align: center;
-  margin: 100px 10px 10px 10px;
 }
 
 .quien-soy {
   display: flex;
   justify-content: center;
 }
-
-.persona {
+.quien-soy p {
+  height: 400px;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  margin: 100px 10px 10px 10px;
+}
+.quien-soy .persona {
   width: 500px;
   margin-right: 100px;
 }
@@ -163,19 +155,18 @@ h1 {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
 }
-
-.tarjeta {
+.tarjetas .tarjeta {
   background-color: #253031;
   flex-basis: 100%;
   padding: 2rem;
 }
-.tarjeta h2 {
+.tarjetas .tarjeta h2 {
   font-size: 40px;
   font-family: sans-serif;
   color: bisque;
   text-align: center;
 }
-.tarjeta img {
+.tarjetas .tarjeta img {
   border: solid 4px black;
   width: 600px;
   height: 470px;
@@ -200,8 +191,7 @@ h1 {
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "tazas   jarros   chopps   matelisto" "maderas  remeras  buzos    almohada";
 }
-
-.grid-hijo {
+.produccion .grid-hijo {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 35px;
   color: black;
@@ -211,99 +201,91 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-.grid-hijo p {
+.produccion .grid-hijo p {
   border: solid aquamarine;
   background-color: aquamarine;
 }
-
-.tazas {
+.produccion .tazas {
   background-color: #2978A0;
   grid-area: tazas;
   background-image: url(../img/mockup-taza.jpg);
   background-size: cover;
 }
-.tazas:hover {
+.produccion .tazas:hover {
   transition: 0.5s;
   transform: scale(1.1);
 }
-
-.jarros {
+.produccion .jarros {
   background-color: #2978A0;
   grid-area: jarros;
   background-image: url(../img/Jarro.jpg);
   background-size: cover;
   background-position: center;
 }
-.jarros:hover {
+.produccion .jarros:hover {
   transition: 0.5s;
   transform: scale(1.1);
 }
-
-.chopps {
+.produccion .chopps {
   background-color: #2978A0;
   grid-area: chopps;
   background-image: url(../img/Chopps.jpeg);
   background-size: cover;
   background-position: 450px;
 }
-.chopps:hover {
+.produccion .chopps:hover {
   transition: 0.5s;
   transform: scale(1.1);
 }
-
-.matelisto {
+.produccion .matelisto {
   background-color: #2978A0;
   grid-area: matelisto;
   background-image: url(../img/mockup-mater.jpg);
   background-size: cover;
 }
-.matelisto:hover {
+.produccion .matelisto:hover {
   transition: 0.5s;
   transform: scale(1.1);
 }
-
-.maderas {
+.produccion .maderas {
   background-color: #2978A0;
   grid-area: maderas;
   background-image: url(../img/Madera.jpeg);
   background-size: cover;
   background-position: center;
 }
-.maderas:hover {
+.produccion .maderas:hover {
   transition: 0.5s;
   transform: scale(1.1);
 }
-
-.remeras {
+.produccion .remeras {
   background-color: #2978A0;
   grid-area: remeras;
   background-image: url(../img/mockup-reme.png);
   background-size: cover;
 }
-.remeras:hover {
+.produccion .remeras:hover {
   transition: 0.5s;
   transform: scale(1.1);
 }
-
-.gorras {
+.produccion .gorras {
   background-color: #2978A0;
   grid-area: buzos;
   background-image: url(../img/Gorra.png);
   background-size: cover;
   background-position: center;
 }
-.gorras:hover {
+.produccion .gorras:hover {
   transition: 0.5s;
   transform: scale(1.1);
 }
-
-.almohada {
+.produccion .almohada {
   background-color: #2978A0;
   grid-area: almohada;
   background-image: url(../img/mockup-almo.jpg);
   background-size: cover;
 }
-.almohada:hover {
+.produccion .almohada:hover {
   transition: 0.5s;
   transform: scale(1.1);
 }
@@ -313,22 +295,51 @@ h1 {
   display: flex;
   justify-content: space-around;
 }
-
-.formulario {
-  margin-left: 10px;
+.contacto-ubi .formulario {
+  width: 90%;
+  max-width: 400px;
+  border-radius: 1em;
+  padding: 3.5em 1.5em;
 }
-
-.mensaje p {
+.contacto-ubi .formulario .mensaje p {
   color: white;
   font-size: 50px;
   text-decoration: underline;
-  grid-area: mensaje;
+  text-align: center;
 }
-
-.ubicacion p {
+.contacto-ubi .formulario .form__container {
+  width: 100%;
+  display: grid;
+  gap: 1em;
+  grid-auto-columns: 100%;
+}
+.contacto-ubi .formulario .form__container .form__input {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  padding: 0.8em 1em;
+  outline: none;
+  border: 1px solid;
+}
+.contacto-ubi .formulario .form__container .form__input .form__input--mensaje {
+  resize: none;
+  padding: 1.8em 1em;
+  margin-bottom: 0.5em;
+}
+.contacto-ubi .formulario .form__container .form__cta {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #0770db;
+  color: white;
+  border: none;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 0.7em 0;
+  border-radius: 0.2em;
+}
+.contacto-ubi .ubicacion p {
   color: white;
   font-size: 50px;
   text-decoration: underline;
+  text-align: center;
 }
 
 .pie-pagina {
@@ -364,8 +375,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
 }
-
-.social {
+.pie-pagina .social {
   background-color: black;
   display: flex;
   flex-direction: column;
@@ -376,13 +386,12 @@ h1 {
   gap: 1rem;
   border-radius: 1rem;
 }
-.social:hover {
-  transform: scale(1.3);
-}
-
-.bi {
+.pie-pagina .social .bi {
   font-size: 2rem;
   color: white;
+}
+.pie-pagina .social:hover {
+  transform: scale(1.3);
 }
 
 /******************************** smartphone ********************************/
@@ -402,7 +411,7 @@ h1 {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: "rectangulo-1" "rectangulo-3" "rectangulo-2" "rectangulo-4";
   }
-  .grid-inicio {
+  .rectangulos .grid-inicio {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-size: 50px;
     color: black;
@@ -412,7 +421,7 @@ h1 {
     justify-content: center;
     align-items: center;
   }
-  .grid-inicio a {
+  .rectangulos .grid-inicio a {
     text-decoration: none;
     color: white;
     border: dashed rgb(2, 21, 85) 5px;
@@ -430,6 +439,7 @@ h1 {
     background-size: 100px 100px;
     background-position-x: 10px;
     padding: 30px;
+    /* Media Logos Footer*/
   }
   .pie-pagina h2 {
     font-size: 0px;
@@ -453,8 +463,7 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
   }
-  /* Media Logos Footer*/
-  .social {
+  .pie-pagina .social {
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -465,7 +474,7 @@ h1 {
     gap: 2rem;
     border-radius: 1rem;
   }
-  .bi {
+  .pie-pagina .social .bi {
     font-size: 1.5rem;
     color: white;
   }
@@ -473,14 +482,14 @@ h1 {
   .presentacion {
     width: 100%;
   }
-  .presentacion h1 {
+  .presentacion .intro h1 {
     background-color: #3c787c;
     text-align: center;
     font-size: 45px;
     font-family: Georgia, "Times New Roman", Times, serif;
     border-top: #202A25;
   }
-  .presentacion h2 {
+  .presentacion .intro h2 {
     margin: 20px 1px 5px 50px;
     padding-left: 25px;
     font-size: 50px;
@@ -488,25 +497,25 @@ h1 {
     border: solid aquamarine;
     border-radius: 0px 35px 0px 35px;
   }
-  .presentacion h3 {
+  .presentacion .intro h3 {
     color: white;
     text-decoration: underline;
     font-size: 25px;
     margin-top: 20px;
     margin-left: 120px;
   }
-  .presentacion p {
-    font-size: 23px;
-    color: white;
-    text-align: center;
-    margin: 5px;
-  }
   .quien-soy {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap-reverse;
   }
-  .persona {
+  .quien-soy p {
+    font-size: 23px;
+    color: white;
+    text-align: center;
+    margin: 5px;
+  }
+  .quien-soy .persona {
     width: 300px;
     margin-top: 10px;
     margin-left: 110px;
@@ -521,7 +530,7 @@ h1 {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: "tazas    jarros" "chopps   matelisto" "maderas  remeras" "buzos    almohada";
   }
-  .grid-hijo {
+  .produccion .grid-hijo {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-size: 35px;
     color: black;
@@ -531,12 +540,12 @@ h1 {
     justify-content: center;
     align-items: center;
   }
-  .grid-hijo p {
+  .produccion .grid-hijo p {
     border: solid aquamarine;
     background-color: aquamarine;
   }
   /*Media Servicios*/
-  h1 {
+  .servicios h1 {
     width: 100%;
     background-color: #3c787c;
     text-align: center;
@@ -558,18 +567,18 @@ h1 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
-  .tarjeta {
+  .tarjetas .tarjeta {
     background-color: #253031;
     flex-basis: 100%;
     padding: 0.4rem;
   }
-  .tarjeta h2 {
+  .tarjetas .tarjeta h2 {
     font-size: 40px;
     font-family: sans-serif;
     color: bisque;
     text-align: center;
   }
-  .tarjeta img {
+  .tarjetas .tarjeta img {
     border: solid 4px;
     width: 100%;
     height: 100%;
@@ -579,31 +588,31 @@ h1 {
     width: 100%;
     display: inline;
   }
-  .contacta {
+  .contacto-ubi .contacta {
     width: 100%;
   }
-  .contacta h1 {
+  .contacto-ubi .contacta h1 {
     font-size: 50px;
   }
-  .formulario {
+  .contacto-ubi .formulario {
     margin-left: 10px;
   }
-  .mensaje p {
+  .contacto-ubi .formulario .mensaje p {
     color: white;
     font-size: 50px;
     text-decoration: underline;
     grid-area: mensaje;
   }
-  .mapa {
-    top: 0;
-    width: 380px;
-    height: 400px;
-    margin-left: 10px;
-  }
-  .ubicacion p {
+  .contacto-ubi .ubicacion p {
     color: white;
     font-size: 50px;
     text-decoration: underline;
+    margin-left: 10px;
+  }
+  .contacto-ubi .ubicacion .mapa {
+    top: 0;
+    width: 380px;
+    height: 400px;
     margin-left: 10px;
   }
 }
@@ -624,7 +633,7 @@ h1 {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: "rectangulo-1" "rectangulo-3" "rectangulo-2" "rectangulo-4";
   }
-  .grid-inicio {
+  .rectangulos .grid-inicio {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-size: 50px;
     color: black;
@@ -634,7 +643,7 @@ h1 {
     justify-content: center;
     align-items: center;
   }
-  .grid-inicio a {
+  .rectangulos .grid-inicio a {
     text-decoration: none;
     color: white;
     border: dashed rgb(2, 21, 85) 5px;
@@ -652,6 +661,7 @@ h1 {
     background-size: 100px 100px;
     background-position-x: 10px;
     padding: 30px;
+    /* Media Logos Footer*/
   }
   .pie-pagina h2 {
     font-size: 0px;
@@ -675,8 +685,7 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
   }
-  /* Media Logos Footer*/
-  .social {
+  .pie-pagina .social {
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -687,7 +696,7 @@ h1 {
     gap: 2rem;
     border-radius: 1rem;
   }
-  .bi {
+  .pie-pagina .social .bi {
     font-size: 1.5rem;
     color: white;
   }
@@ -695,14 +704,14 @@ h1 {
   .presentacion {
     width: 100%;
   }
-  .presentacion h1 {
+  .presentacion .intro h1 {
     background-color: #3c787c;
     text-align: center;
     font-size: 45px;
     font-family: Georgia, "Times New Roman", Times, serif;
     border-top: #202A25;
   }
-  .presentacion h2 {
+  .presentacion .intro h2 {
     margin: 20px 1px 5px 50px;
     padding-left: 25px;
     font-size: 50px;
@@ -710,18 +719,28 @@ h1 {
     border: solid aquamarine;
     border-radius: 0px 35px 0px 35px;
   }
-  .presentacion h3 {
+  .presentacion .intro h3 {
     color: white;
     text-decoration: underline;
     font-size: 25px;
     margin-top: 20px;
     margin-left: 110px;
   }
-  .presentacion p {
+  .presentacion .quien-soy {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+  }
+  .presentacion .quien-soy p {
     font-size: 23.5px;
     color: white;
     text-align: center;
     margin: 5px;
+  }
+  .presentacion .quien-soy .persona {
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 110px;
   }
   .quien-soy {
     display: flex;
@@ -743,7 +762,7 @@ h1 {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: "tazas    jarros" "chopps   matelisto" "maderas  remeras" "buzos    almohada";
   }
-  .grid-hijo {
+  .produccion .grid-hijo {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-size: 35px;
     color: black;
@@ -753,12 +772,12 @@ h1 {
     justify-content: center;
     align-items: center;
   }
-  .grid-hijo p {
+  .produccion .grid-hijo p {
     border: solid aquamarine;
     background-color: aquamarine;
   }
   /*Media Servicios*/
-  h1 {
+  .servicios h1 {
     width: 100%;
     background-color: #3c787c;
     text-align: center;
@@ -780,18 +799,18 @@ h1 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
-  .tarjeta {
+  .tarjetas .tarjeta {
     background-color: #253031;
     flex-basis: 100%;
     padding: 0.4rem;
   }
-  .tarjeta h2 {
+  .tarjetas .tarjeta h2 {
     font-size: 40px;
     font-family: sans-serif;
     color: bisque;
     text-align: center;
   }
-  .tarjeta img {
+  .tarjetas .tarjeta img {
     border: solid 4px;
     width: 100%;
     height: 100%;
@@ -801,31 +820,30 @@ h1 {
     width: 100%;
     display: inline;
   }
-  .contacta {
+  .contacto-ubi .contacta {
     width: 100%;
   }
-  .contacta h1 {
+  .contacto-ubi .contacta h1 {
     font-size: 50px;
   }
-  .formulario {
+  .contacto-ubi .formulario {
     margin-left: 10px;
   }
-  .mensaje p {
+  .contacto-ubi .formulario .mensaje p {
     color: white;
     font-size: 50px;
     text-decoration: underline;
-    grid-area: mensaje;
   }
-  .mapa {
+  .contacto-ubi .ubicacion p {
+    color: white;
+    font-size: 50px;
+    text-decoration: underline;
+    margin-left: 10px;
+  }
+  .contacto-ubi .ubicacion .mapa {
     top: 0;
     width: 330px;
     height: 400px;
-    margin-left: 10px;
-  }
-  .ubicacion p {
-    color: white;
-    font-size: 50px;
-    text-decoration: underline;
     margin-left: 10px;
   }
 }/*# sourceMappingURL=estilos.css.map */
